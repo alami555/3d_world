@@ -460,7 +460,7 @@ Light:function(){
        var img = ',url(crate.gif) ';
        //console.log(amount)
     
-      face.style.backgroundImage = ` linear-gradient( rgba(0,0,0,${amount} ), rgba(0,0,0,${amount} )) `;
+      face.style.backgroundImage = ` linear-gradient( rgba(0,0,0,${amount * (1 / 2)} ), rgba(0,0,0,${amount * (1 / 2)} )) `;
       face.style.border = 'none';
    
    
