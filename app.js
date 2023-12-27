@@ -5,8 +5,8 @@ var sun =  three.Light;
 
 
 
-three.position.set(0,0,0);
-    var cube1 = three.CubeGeometry(6,1,1);
+    three.position.set(0,0,0);
+    var cube1 = three.CubeGeometry(0.1,1,1);
     var v =  three.MeshPhongMaterial(250, 240, 230);
    //three.MeshImagefaces(1.9,'crate.gif',7);
     var mesh1  = three.Mesh(cube1,0,0,0);
@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
    // document.getElementById('notice').innerHTML = 'Working API detected';
     window.addEventListener('deviceorientation', (eventData) => {
       // gamma: Tilting the device from left to right. Tilting the device to the right will result in a positive value.
-      const y = eventData.gamma;
+      const y1 = eventData.gamma;
       // beta: Tilting the device from the front to the back. Tilting the device to the front will result in a positive value.
-      const x = eventData.beta;
+      const x1 = eventData.beta;
       // alpha: The direction the compass of the device aims to in degrees.
-      const z = eventData.alpha;
+      const z1 = eventData.alpha;
       // Call the function to use the data on the page.
-      deviceOrientationHandler(x , y, z);
+      deviceOrientationHandler(y1 , x1, z1);
     }, false);
   } /*else {
     document.getElementById('notice').innerHTML = 'No API detected'
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     
     
     
-    rotateZ(${y}deg)
+    rotateZ(${z}deg)
     
     
     `
