@@ -9,10 +9,7 @@ var sun =  three.Light;
     var cube1 = three.CubeGeometry(0.1,1,1);
     var v =  three.MeshPhongMaterial(250, 240, 230);
    //three.MeshImagefaces(1.9,'crate.gif',7);
-    var mesh1  = three.Mesh(cube1,0,0,0);
- 
-  
-   Sceen.add(mesh1);
+
 
 
 
@@ -52,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     */
     // Rotate the disc of the compass. - CSS transform
     //const compassDisc = document.getElementById('compassDiscImg');
+      /*
     mesh1.style.transform = `
     
     
@@ -59,8 +57,20 @@ document.addEventListener('DOMContentLoaded', function(event) {
     rotateX(${z}deg)
     
     
-    `
+    `*/
+
+var mesh1  = three.Mesh(cube1,x,0,0);
+ 
+  
+   Sceen.add(mesh1);
+
+    
   }
+    
+
+
+
+      
 
 });
 
