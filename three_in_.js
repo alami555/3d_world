@@ -1,6 +1,6 @@
 
 
-console.log('strat 3D world..')
+console.log('strat 3D world..');
 
 
 var x0 = 0 , y0 = 0;
@@ -8,15 +8,15 @@ var x0 = 0 , y0 = 0;
 function sizescreen(){
     screen_1.style.width = `${window.innerWidth}px`;
     screen_1.style.height = `${window.innerHeight}px`;
-    var w = window.innerWidth / 2 - (640)
-    var h = window.innerHeight / 2 - (460)
+    var w = window.innerWidth / 2 - (640);
+    var h = window.innerHeight / 2 - (460);
    //var el = document.getElementById('camera')
     // camera.style.left = `${w}px`;
     // camera.style.top = `${h}px`;
-   var c =  x0 = w
-   var c1 =  y0 = h
+   var c =  x0 = w;
+   var c1 =  y0 = h;
   //  requestAnimationFrame(sizescreen)
-    return x0 = c , y0 = c1
+    return x0 = c , y0 = c1;
  }
   
 sizescreen();
