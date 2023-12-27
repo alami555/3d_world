@@ -32,19 +32,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
    // document.getElementById('notice').innerHTML = 'Working API detected';
     window.addEventListener('deviceorientation', (eventData) => {
       // gamma: Tilting the device from left to right. Tilting the device to the right will result in a positive value.
-      const tiltLR = eventData.gamma;
+      const y = eventData.gamma;
       // beta: Tilting the device from the front to the back. Tilting the device to the front will result in a positive value.
-      const tiltFB = eventData.beta;
+      const x = eventData.beta;
       // alpha: The direction the compass of the device aims to in degrees.
-      const dir = eventData.alpha
+      const z = eventData.alpha;
       // Call the function to use the data on the page.
-      deviceOrientationHandler(tiltLR, tiltFB, dir);
+      deviceOrientationHandler(x , y, z);
     }, false);
   } /*else {
     document.getElementById('notice').innerHTML = 'No API detected'
   };
 */
-  function deviceOrientationHandler(tiltLR, tiltFB, dir) {
+  function deviceOrientationHandler(x,y,z) {
     /*
     document.getElementById('tiltLR').innerHTML = Math.ceil(tiltLR);
     document.getElementById('tiltFB').innerHTML = Math.ceil(tiltFB);
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     mesh1.style.transform = `
     
     
-    rotateZ(${dir}deg)  
-    rotateY(${tiltLR}deg)
+    rotateX(${x}deg)  
+    rotateY(${y}deg)
     
     
     `
