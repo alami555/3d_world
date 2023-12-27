@@ -27,7 +27,7 @@
             var promise = devices.getUserMedia(constraints);
             promise
                 .then(function(stream) {
-                    playStream(element, stream)
+                    playStream(element, stream)    
                 })
                 .catch(function(error) {
                     console.error(error.name + ': ' + error.message);
