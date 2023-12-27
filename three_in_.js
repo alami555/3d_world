@@ -4,9 +4,8 @@ console.log('strat 3D world..')
 
 
 var x0 = 0 , y0 = 0;
-screen_1.style.width = `${window.innerWidth}px`;
-screen_1.style.height = `${window.innerHeight}px`; 
-/*function sizescreen(){
+
+function sizescreen(){
     screen_1.style.width = `${window.innerWidth}px`;
     screen_1.style.height = `${window.innerHeight}px`;
     var w = window.innerWidth / 2 - (640)
@@ -16,12 +15,12 @@ screen_1.style.height = `${window.innerHeight}px`;
     // camera.style.top = `${h}px`;
    var c =  x0 = w
    var c1 =  y0 = h
-    requestAnimationFrame(sizescreen)
+  //  requestAnimationFrame(sizescreen)
     return x0 = c , y0 = c1
  }
   
 sizescreen();
-*/
+
 var pv = 1010;
 let zoom = 1;
 const ZOOM_SPEED = 7;
