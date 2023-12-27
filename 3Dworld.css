@@ -1,0 +1,62 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+#screen_1{
+    border: 1px solid ;
+background-color: rgb(104, 104, 104);
+overflow: hidden;
+}
+body{
+    position: absolute;
+    overflow: hidden;
+}
+#pl{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+/*
+#face{
+    border: 0.001mm solid black;
+    background-color:rgb(250, 240, 230);
+    
+} */
+/*
+
+#light {
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+    
+    opacity: 1;
+    top: 491px;
+    left: 540p;
+    
+    box-shadow: 0px 0px 78px 22px white;
+    
+    background-color: white;
+    border-radius: 100px;
+    
+    transform:
+    rotateY(6deg) translate3d(0px, 0px, 578px)
+    
+    ;
+  }
+    
+*/
+
+
+
+
+
+
+
+
+
+
+
