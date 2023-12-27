@@ -75,7 +75,7 @@ comp.id = 'com1';
 comp.style.width = '20px';
 comp.style.height = '360px';
 comp.style.background = 'white';
-camera_1.appendChild(comp)
+//camera_1.appendChild(comp)
 
 
 var vx = '',
