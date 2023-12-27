@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     
     
     
-    rotateY(${y}deg)
+    rotateZ(${y}deg)
     
     
     `
