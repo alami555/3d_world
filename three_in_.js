@@ -4,7 +4,8 @@ console.log('strat 3D world..')
 
 
 var x0 = 0 , y0 = 0;
-
+screen_1.style.width = `${window.innerWidth}px`;
+screen_1.style.height = `${window.innerHeight}px`;
 function sizescreen(){
     screen_1.style.width = `${window.innerWidth}px`;
     screen_1.style.height = `${window.innerHeight}px`;
