@@ -104,13 +104,7 @@ three.position.set(0,0,0);
 //sun()
 
 
-   three.position.set(-400,0,0);
-   var cube1 = three.CubeGeometry(1,1,1);
-   var v =  three.MeshPhongMaterial(150, 0, 0);
-  //three.MeshImagefaces(1.9,'crate.gif',7);
-   var mesh1 = three.Mesh(cube1,0,0,0);
 
-  Sceen.add(mesh1);
 sun()
 
 
