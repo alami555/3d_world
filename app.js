@@ -6,7 +6,7 @@ var sun =  three.Light;
 
 
 three.position.set(0,0,0);
-    var cube1 = three.CubeGeometry(3,3,12);
+    var cube1 = three.CubeGeometry(6,1,1);
     var v =  three.MeshPhongMaterial(250, 240, 230);
    //three.MeshImagefaces(1.9,'crate.gif',7);
     var mesh1  = three.Mesh(cube1,0,0,0);
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     mesh1.style.transform = `
     
     
-    rotateX(${x}deg)  
+    
     rotateY(${y}deg)
     
     
