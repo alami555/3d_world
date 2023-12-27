@@ -42,7 +42,9 @@
     
     var element = document.querySelector('#my-video');
     
-    playCamera(element, window.innerWidth, window.innerHeight);
+    playCamera(element, window.innerWidth, 0);
+
+    element.height = window.innerHeight;
 
   </script>
 </body>
