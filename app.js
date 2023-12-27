@@ -14,7 +14,7 @@ three.position.set(0,0,0);
   
    Sceen.add(mesh1);
 
-three.position.set(0,0,0);
+three.position.set(-400,0,0);
     var cube2 = three.CubeGeometry(1,1,1);
     var v =  three.MeshPhongMaterial(255, 255, 255);
    //three.MeshImagefaces(1.9,'crate.gif',7);
