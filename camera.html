@@ -1,1 +1,49 @@
 
+<!doctype html>
+<html>
+<body>
+  <video id="my-video"></video>
+  <script>
+
+    function playStream(element, stream) {
+        var handleLoaded = function() {
+            element.removeEventListener('loadedmetadata', handleLoaded);
+            element.play();
+        };
+        element.addEventListener('loadedmetadata', handleLoaded);
+        element.srcObject = stream;
+    }
+    
+    function playCamera(element, preferedWidth, preferedHeight) {
+        var devices = navigator.mediaDevices;
+        if (devices && 'getUserMedia' in devices) {
+            var constraints = {
+                video: {
+                    width: preferedWidth,
+                    height: preferedHeight
+                }
+                // you can use microphone adding `audio: true` property here
+            };
+            var promise = devices.getUserMedia(constraints);
+            promise
+                .then(function(stream) {
+                    playStream(element, stream)
+                })
+                .catch(function(error) {
+                    console.error(error.name + ': ' + error.message);
+                });
+        } else {
+            console.error('Camera API is not supported.');
+        }
+    }
+    
+    
+    // Usage example:
+    
+    var element = document.querySelector('#my-video');
+    
+    playCamera(element, 640, 480);
+
+  </script>
+</body>
+</html>
