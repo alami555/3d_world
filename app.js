@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.getElementById('notice').innerHTML = 'No API detected'
   };
 */
-  function deviceOrientationHandler(x,y,z) {
+  function deviceOrientationHandler(y,x,z) {
     /*
     document.getElementById('tiltLR').innerHTML = Math.ceil(tiltLR);
     document.getElementById('tiltFB').innerHTML = Math.ceil(tiltFB);
