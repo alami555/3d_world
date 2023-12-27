@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     */
     // Rotate the disc of the compass. - CSS transform
     //const compassDisc = document.getElementById('compassDiscImg');
-    comp.style.transform = `rotateZ(${dir}deg)`
+    mesh1.style.transform = `rotateZ(${dir}deg)`
   }
 
 });
