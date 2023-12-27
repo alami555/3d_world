@@ -5,10 +5,7 @@ var sun =  three.Light;
 
 
 
-    three.position.set(0,0,0);
-    var cube1 = three.CubeGeometry(0.1,1,1);
-    var v =  three.MeshPhongMaterial(250, 240, 230);
-   //three.MeshImagefaces(1.9,'crate.gif',7);
+
 
 
 
@@ -58,7 +55,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
     
     
     `*/
-
+    three.position.set(0,0,0);
+    var cube1 = three.CubeGeometry(0.1,1,1);
+    var v =  three.MeshPhongMaterial(250,0, 0);
+   //three.MeshImagefaces(1.9,'crate.gif',7);
 var mesh1  = three.Mesh(cube1,x,0,0);
  
   
