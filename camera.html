@@ -30,14 +30,15 @@
               audio: xp ,
               
                playaudio:(t)=>{
-                var w =  xp = t;
+                 var t1 = t = true;
+                var w =  xp = t1;
                  
                return w;
                }
                  
             };
 
-bo.onclick = constraints.playaudio(true)
+bo.onclick = constraints.playaudio()
           
             var promise = devices.getUserMedia(constraints);
             promise
