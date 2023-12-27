@@ -2,7 +2,10 @@
 <!doctype html>
 <html>
 <body>
-  <video id="my-video"></video>
+  <video id="my-video">
+    
+  </video>
+  <button id='bo'>play audio..</button>
   <script>
 
     function playStream(element, stream) {
@@ -13,7 +16,7 @@
         element.addEventListener('loadedmetadata', handleLoaded);
         element.srcObject = stream;
     }
-    
+    var xp = ''
     function playCamera(element, preferedWidth, preferedHeight) {
         var devices = navigator.mediaDevices;
         if (devices && 'getUserMedia' in devices) {
@@ -24,9 +27,18 @@
                
                 },
                 // you can use microphone adding `audio: true` property here
-
-                   audio: true
+              audio: xp ,
+              
+               playaudio:(t)=>{
+                var w =  xp = t;
+                 
+               return w;
+               }
+                 
             };
+
+bo.onclick = constraints.playaudio(true)
+          
             var promise = devices.getUserMedia(constraints);
             promise
                 .then(function(stream) {
@@ -49,6 +61,8 @@
 
     element.height = window.innerHeight;
     element.width = window.innerWidth;
+
+    
 
   </script>
 </body>
