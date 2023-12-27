@@ -6,13 +6,25 @@ var sun =  three.Light;
 
 
 three.position.set(0,0,0);
-    var cube1 = three.CubeGeometry(1,1,1);
+    var cube1 = three.CubeGeometry(3,3,3);
     var v =  three.MeshPhongMaterial(250, 240, 230);
    //three.MeshImagefaces(1.9,'crate.gif',7);
     var mesh1  = three.Mesh(cube1,0,0,0);
  
   
    Sceen.add(mesh1);
+
+three.position.set(0,0,0);
+    var cube2 = three.CubeGeometry(1,1,1);
+    var v =  three.MeshPhongMaterial(255, 255, 255);
+   //three.MeshImagefaces(1.9,'crate.gif',7);
+    var mesh2  = three.Mesh(cube2,0,0,0);
+ 
+  
+   Sceen.add(mesh2);
+
+
+
 //sun()
 
 
