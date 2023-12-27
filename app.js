@@ -7,7 +7,7 @@ var sun =  three.Light;
 
 three.position.set(0,0,0);
     var cube1 = three.CubeGeometry(1,1,1);
-    var v =  three.MeshPhongMaterial(0, 150, 0);
+    var v =  three.MeshPhongMaterial(250, 240, 230);
    //three.MeshImagefaces(1.9,'crate.gif',7);
     var mesh1  = three.Mesh(cube1,0,0,0);
  
