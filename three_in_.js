@@ -6,7 +6,7 @@ console.log('strat 3D world..')
 var x0 = 0 , y0 = 0;
 screen_1.style.width = `${window.innerWidth}px`;
 screen_1.style.height = `${window.innerHeight}px`;
-function sizescreen(){
+/*function sizescreen(){
     screen_1.style.width = `${window.innerWidth}px`;
     screen_1.style.height = `${window.innerHeight}px`;
     var w = window.innerWidth / 2 - (640)
@@ -21,7 +21,7 @@ function sizescreen(){
  }
   
 sizescreen();
-
+*/
 var pv = 1010;
 let zoom = 1;
 const ZOOM_SPEED = 7;
